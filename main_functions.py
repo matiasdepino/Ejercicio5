@@ -82,6 +82,7 @@ def main2(size, title, color):
         drawRoad(screen)
         road.plotRoad(screen)
 
+
         rate = 10
         car.update(1 / rate)
         updateSteering(screen, car)
