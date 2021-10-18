@@ -12,6 +12,6 @@ width = int(input("Ancho de la ventana:"))
 height = int(input("Alto de la ventana:"))
 size[0] = width
 size[1] = height
-color = BLUE, RED, GREEN (255, 255, 255)
+BLUE, RED, GREEN (255, 255, 255)
 title = input("Asignar titulo:")
-main2(size, title, color)
+main2(size, title, BLUE, RED, GREEN)
