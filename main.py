@@ -1,7 +1,7 @@
 # Import a library of functions called 'pygame'
 
 import pygame
-from Main_functions import *
+from main_functions import *
 
 # Initialize the game engine
 pygame.init()
