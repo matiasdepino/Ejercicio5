@@ -7,7 +7,7 @@ from pygame.examples.headless_no_windows_needed import screen
 from car_model import Car2
 from lane_following import CurvedRoad
 from defines import *
-def main2(size, title, BLUE, RED, GREEN):
+def main2(size, title, color_fondo):
 
     screen = pygame.display.set_mode(size)
     pygame.display.set_caption(title)
@@ -26,7 +26,7 @@ def main2(size, title, BLUE, RED, GREEN):
     car.speed = 100
     # car = laneFollowingCar1()
 
-    screen.fill(BLUE, RED, GREEN)
+    screen.fill(color_fondo)
 
     # -------- Main Program Loop -----------
     t = 0
@@ -42,8 +42,6 @@ def main2(size, title, BLUE, RED, GREEN):
         if keys[pygame.K_RIGHT]:
             car.turn(1)
 # nota: no olvidar los dos puntos de un comando de if Ej:
-        if keys[pygame.K_Q]:
-            break
         # print(t)
         # inputKey = input('press a key')
         # gameLoop(inputKey,car,screen)
@@ -79,7 +77,7 @@ def main2(size, title, BLUE, RED, GREEN):
 
         # First, clear the screen to white. Don't put other drawing commands
         # above this, or they will be erased with this command.
-        screen.fill(BLUE, RED, GREEN)
+        screen.fill(color_fondo)
 
         # --- Game logic and drawing code combined
 
