@@ -1,20 +1,20 @@
 # Import a library of functions called 'pygame'
-
 import pygame
 from main_functions import *
-
 # Initialize the game engine
 pygame.init()
-
-#call main routine
+# Set window size
 size = [1300, 600]
-# Define size of windows
-size[0] = int(input("Ancho de la ventana:"))
-size[1] = int(input("Alto de la ventana:"))
-blue = int(input("BLUE: "))
-red = int(input("RED: "))
-green = int(input("GREEN: "))
-color_fondo =(blue, red, green)
-title = input("Asignar titulo:")
-main2 (size, title, color_fondo)
+width = int(input("Ancho de la ventana: "))
+height = int(input("Alto de la ventana: "))
+size[0] = width
+size[1] = height
+RED = int(input("RED :"))
+GREEN = int(input("GREEN :"))
+BLUE = int(input("BLUE :"))
+n1 = (RED, GREEN, BLUE)
+title = input("Ingresar titulo :")
+# Call main routine
+main2(size, title, n1)
+
 
